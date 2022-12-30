@@ -64,7 +64,6 @@ include 'header.php';
         <input type="hidden" name="harga_barang" value="<?php echo $d['harga_brg']; ?>">
         <input type="hidden" name="jumlah" value="<?php echo $total;?>">
         <input type="hidden" name="total" value="<?php echo $hasil;?>">
-
           <div class="row g-3">
             <div class="col-sm-12">
               <label for="firstName" class="form-label">Nama Penerima</label>

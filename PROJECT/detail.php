@@ -16,7 +16,8 @@ include 'header.html';
                         <div class="fs-5 mb-5">
                             <span><?php echo "Rp.".number_format($harga); ?></span> 
                         </div>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                        <p class="lead"><?php echo $d['deskripsi']; ?></p>
+                        <br>
                         <form method="post" <?php echo "action='validation/validation_checkout.php?id=$d[id_brg]'"?>>
                         <div class="d-flex">
                             <input class="form-control text-center me-3" id="inputQuantity" name="jumlah" type="number" placeholder="Jumlah" style="max-width: 6rem" required/>
@@ -24,7 +25,7 @@ include 'header.html';
   if (isset($_SESSION['level']) && $_SESSION['level'] == "user") {
     echo "<button class='btn btn-outline-primary me-2' type='submit' value='SIMPAN'>Beli Sekarang</button>";
   } else {
-        echo "<button type='button' class='btn btn-outline-primary me-2' data-bs-toggle='modal' data-bs-target='#exampleModal1'>Beli Sekarang</button>";
+        echo "<button type='button' class='btn btn-outline-primary me-2' data-bs-toggle='modal' data-bs-target='#exampleModal'>Beli Sekarang</button>";
   }
 ?>
                         </div>
@@ -32,7 +33,6 @@ include 'header.html';
                 </div>
             </div>
         </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </form>
     </body>
     

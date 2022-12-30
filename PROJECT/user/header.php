@@ -20,8 +20,7 @@
     </a>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="index.php" class="nav-link px-2 link-secondary">Home</a></li>
-      <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+      <li><a class="nav-link active" aria-current="page" href="index.php">Beranda</a></li>
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Pilihan Produk
@@ -32,7 +31,7 @@
             <li><a class="dropdown-item" href="find.php?id=anak">Sepatu Anak</a></li>
           </ul>
         </li>
-      <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        <li><a class="nav-link active" aria-current="page" href="about.html">Tentang Kami</a></li>
     </ul>
         <div class="dropdown text-end">
           <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,6 +40,7 @@
           <ul class="dropdown-menu text-small">
           <li <a class="dropdown-item">Halo. <?php echo $_SESSION['username']; ?></a></li>
             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="history.php">Pesanan Saya</a></li>
             <li><a class="dropdown-item" href="logout.php">Sign out</a></li>
           </ul>
         </div>

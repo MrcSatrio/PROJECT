@@ -25,7 +25,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM user ORDER BY username DESC");
        <?php echo "<td>".$user_data['level']."</td>";  ?> 
        <?php echo "<td>".$user_data['password']."</td>"; ?> 
        <?php echo "<td>".$user_data['waktu']."</td>"; ?> 
-        <td><a href="edit.php?id=<?php echo $user_data['username'];?>" class='btn btn-sm btn-warning'>Edit</a>
+        <td><a href="edit_user.php?id=<?php echo $user_data['username'];?>" class='btn btn-sm btn-warning'>Edit</a>
                   <a href="process/delete_user.php?id=<?php echo $user_data['username'];?>" class='btn btn-sm btn-danger' onClick='return confirm("Yakin mau di Hapus?")'>Delete</a></td></tr>      
     <?php
       }

@@ -11,6 +11,7 @@
         <th scope="col">Foto Barang</th>
         <th scope="col">Harga Barang</th>
         <th scope="col">Kategori</th>
+        <th scope="col">Deskripsi Barang</th>
         <th scope="col">Action</th>
     </tr>
 
@@ -22,6 +23,8 @@
       <option value="wanita">Wanita</option>
       <option value="anak">Anak</option>
     </select></td>
+    <td><input type="text" name="deskripsi" required></td>
+  </td>
     <td><input type="submit" value="SIMPAN" onClick='return confirm("Apakah Data Sudah Sesuai ?")'></td>
     </table>
 </body>

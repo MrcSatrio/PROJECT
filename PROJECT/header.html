@@ -5,15 +5,14 @@
 <link rel="shortcut icon" href="assets/gambar/banner/favicon.ico" type="image/x-icon">
 <div class="b-example-divider"></div>
 <title>ADIBAS</title>
-<div class="container">
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
     <img src="assets/gambar/banner/icon.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
     </a>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="index.php" class="nav-link px-2 link-secondary">Home</a></li>
-      <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+
+      <li><a class="nav-link active" aria-current="page" href="index.php">Beranda</a></li>
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Pilihan Produk
@@ -24,14 +23,42 @@
             <li><a class="dropdown-item" href="find.php?id=anak">Sepatu Anak</a></li>
           </ul>
         </li>
-      <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        <li><a class="nav-link active" aria-current="page" href="about.html">Tentang Kami</a></li>
     </ul>
 
     <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login</button>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign-up</button>
+      <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">Masuk</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Buat Akun</button>
     </div>
   </header>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form method="post" action="validation/validation_login.php">
+          <div class="mb-3">
+            <label for="Username" class="col-form-label">Username</label>
+            <input type="text" class="form-control" name="username" required>
+          </div>
+          <div class="mb-3">
+            <label for="Password" class="col-form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="password" required></textarea>
+            <input type="checkbox" onclick="myFunction()">Tampilkan Password
+          </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Masuk</button>
+        &nbsp;
+        <a class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Buat Akun</a>
+      </div>
+      </form>
+    </div>
+  </div>
 </div>
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -53,7 +80,7 @@
           </div> 
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">LOGIN</button>
+        <button type="submit" class="btn btn-primary">Masuk</button>
       </div>
       </form>
     </div>
@@ -84,7 +111,6 @@
           <div class="mb-3">
             <label for="Password" class="col-form-label">Password</label>
             <input type="password" class="form-control" name="password" id="password" required></textarea>
-            <input type="checkbox" onclick="myFunction()">Tampilkan Password
           </div> 
       </div>
       <div class="modal-footer">
@@ -101,6 +127,7 @@
           }
       }
   </script>
+
 		</div>
   </div>
           </div>

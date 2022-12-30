@@ -30,6 +30,10 @@
                 <p class="text-muted"><?php echo $d['jumlah']; ?> item</p>
                 <h4 class="mb-3"> <?php echo "Rp.".number_format($harga); ?><span class="small text-muted"> via (<?php echo $d['metode']; ?>) </span></h4>
               </div>
+              <div>
+                <img class="align-self-center img-fluid"
+                <?php echo "<img class='card-img-top mb-5 mb-md-0' src='../assets/gambar/produk/$d[foto_barang]'/>"?>
+              </div>
             </div>
           </div>
           <div class="card-footer p-4">

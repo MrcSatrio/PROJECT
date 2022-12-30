@@ -20,7 +20,6 @@
       <h2>DAFTAR PRODUK</h2>
   </center>
   <div class="container">
-
 <div class="panel">
     <div class="panel-body">
         <div class="row">
