@@ -47,8 +47,8 @@
           </div>
           <div class="mb-3">
             <label for="Password" class="col-form-label">Password</label>
-            <input type="password" class="form-control" name="password" id="password" required></textarea>
-            <input type="checkbox" onclick="myFunction()">Tampilkan Password
+            <input type="password" class="form-control" name="password" id="floatingPassword1" required></textarea>
+            <input type="checkbox" onclick="myFunction1()">Tampilkan Password
           </div> 
       </div>
       <div class="modal-footer">
@@ -75,8 +75,8 @@
           </div>
           <div class="mb-3">
             <label for="Password" class="col-form-label">Password</label>
-            <input type="password" class="form-control" name="password" id="password" required></textarea>
-            <input type="checkbox" onclick="myFunction()">Tampilkan Password
+            <input type="password" class="form-control" name="password" id="floatingPassword2" required></textarea>
+            <input type="checkbox" onclick="myFunction2()">Tampilkan Password
           </div> 
       </div>
       <div class="modal-footer">
@@ -110,24 +110,41 @@
           </div>
           <div class="mb-3">
             <label for="Password" class="col-form-label">Password</label>
-            <input type="password" class="form-control" name="password" id="password" required></textarea>
+            <input type="password" class="form-control" name="password" id="floatingPassword3" required></textarea>
+            <input type="checkbox" onclick="myFunction3()">Tampilkan Password
           </div> 
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btn-primary">REGISTER</button>
       </div>
-      </form>
-          <script>
-      function myFunction() {
-          var x = document.getElementById("password");
-          if (x.type === "password") {
-              x.type = "text";
-          } else {
-              x.type = "password";
-          }
-      }
-  </script>
 
+      <script>
+        function myFunction1() {
+            var x = document.getElementById("floatingPassword1");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("floatingPassword2");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        function myFunction3() {
+            var x = document.getElementById("floatingPassword3");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+      </script>
+      </form>
 		</div>
   </div>
           </div>
