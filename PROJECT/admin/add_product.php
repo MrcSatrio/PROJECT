@@ -8,23 +8,28 @@
   <thead>
     <tr>
     <th scope="col">Nama Barang</th>
-        <th scope="col">Foto Barang</th>
-        <th scope="col">Harga Barang</th>
-        <th scope="col">Kategori</th>
-        <th scope="col">Deskripsi Barang</th>
-        <th scope="col">Action</th>
-    </tr>
-
     <td><input type="text" name="nama_brg" required></td>
-    <td><input type="file" name="foto" required></td>
-    <td><input type="number" name="harga_brg" required></td>
-    <td><select name="kategori" required>
+    </tr>
+    <tr>
+        <th scope="col">Foto Barang</th>
+        <td><input type="file" name="foto" required></td>
+    </tr>
+    <tr>
+        <th scope="col">Harga Barang</th>
+        <td><input type="number" name="harga_brg" required></td>
+    </tr>
+    <tr>
+        <th scope="col">Kategori</th>
+        <td><select name="kategori" required>
       <option value="pria">Pria</option>
       <option value="wanita">Wanita</option>
       <option value="anak">Anak</option>
     </select></td>
-    <td><input type="text" name="deskripsi" required></td>
-  </td>
-    <td><input type="submit" value="SIMPAN" onClick='return confirm("Apakah Data Sudah Sesuai ?")'></td>
+    </tr>
+    <tr>
+        <th scope="col">Deskripsi Barang</th>
+    <td><textarea name="deskripsi" id="" cols="70" rows="10" required></textarea></td>
+    </tr>
     </table>
+    <input type="submit" class="btn btn-primary"  value="SIMPAN" onClick='return confirm("Apakah Data Sudah Sesuai ?")'>
 </body>
