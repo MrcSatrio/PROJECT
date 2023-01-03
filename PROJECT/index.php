@@ -13,6 +13,9 @@
     elseif($_GET['pesan']=="daftar"){
       echo "<script>alert('Akun Berhasil Didaftarkan ! ')</script>";
   }
+  elseif($_GET['pesan']=="tersedia"){
+    echo "<script>alert('Username atau Email Sudah ! ')</script>";
+}
   }
     ?>
 <body style="background-color: white">  

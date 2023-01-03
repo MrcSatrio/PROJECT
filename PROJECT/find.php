@@ -22,7 +22,7 @@ $harga = $d['harga_brg'];
             <img src="assets/gambar/produk/<?php echo $d['foto_brg'] ?>" class="card-img-top" >
             <div class="card-body">
                 <h5 class="card-title"><?php echo $d['nama_brg'] ?></h5>
-                <p class="card-text"> <h6 class="text-start"><?php echo number_format($harga) ?></h6></p>
+                <p class="card-text"> <h6 class="text-start">Rp.<?php echo number_format($harga) ?></h6></p>
                 <div class="btn-group">
                 <a href="detail.php?id=<?php echo $d['id_brg']?>" class="btn btn-outline-success">Beli Sekarang</a> 
                 </div>
